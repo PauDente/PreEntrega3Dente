@@ -1,0 +1,483 @@
+
+/* ------------------------------------------  FUENTES ------------------------------------------ */
+@font-face {
+    font-family: 'Horizon';
+    src: url('Recursos/Fonts/Horizon.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Recursos/Fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: linear-gradient( rgb(0, 0, 0) , rgb(75, 77, 78));
+}
+
+
+.mainTexts {
+    font-family:"Horizon";
+    color: white;
+    font-size: 3.8rem;
+    transform: translate(350px, 5px);
+    margin-right: 50px;
+}
+
+.imgCollections {
+    margin: 5px;
+    padding: 25px;
+    border-radius: 0.5px;
+    width: 350px;
+    transition: height 1s, width 1s;
+}
+
+.imgCollections:hover  {
+    margin: 5px;
+    padding: 25px;
+    border-radius: 0.5px;
+    width: 380px;
+}
+.mainContainer {
+    display: flex;
+    grid-area: logo;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------  ADAPATDO PARA DESKTOP ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------  ADAPATDO PARA DESKTOP ------------------------------------------------------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+
+/* ------------------------------------------  GRIDS  ---------------------------------------------------------- */
+
+
+#gridIndex {
+    display: grid;
+    grid-template-areas:    "header header header"
+                            "logo logo logo"
+                            "colecciones colecciones colecciones"
+                            "info info info"
+                            "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr 1fr;
+    justify-content: space-evenly; 
+}
+
+#gridCold {
+    display: grid;
+    grid-template-areas:    "menu menu menu"
+                            "titulo titulo titulo"
+                            "imagenes imagenes imagenes"
+                            "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    justify-content: space-evenly; 
+}
+#gridHeraCollection {
+    display: grid;
+    grid-template-areas:    "menu menu menu"
+                            "titulo titulo titulo"
+                            "imagenes imagenes imagenes"
+                            "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    justify-content: space-evenly; 
+}
+#gridSummer {
+    display: grid;
+    grid-template-areas:    "menu menu menu"
+                            "titulo titulo titulo"
+                            "imagenes imagenes imagenes"
+                            "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    justify-content: space-evenly; 
+}
+#gridEnvios {
+    display: grid;
+    grid-template-areas:    "menu menu menu"
+                            "titulo titulo titulo"
+                            "imagenes imagenes imagenes"
+                            "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    justify-content: space-evenly; 
+}
+
+/* ------------------------------------------  ESTRUCTURAS PRIMITIVAS ------------------------------------------ */
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#headerCollections {
+    grid-area: menu;
+}
+#titulo {
+    grid-area: titulo;
+}
+#imagenes {
+    grid-area: imagenes;
+}
+
+#tituloIndex {
+    grid-area: logo;
+}
+
+
+
+
+
+/* ------------------------------------------  CONTENEDORES ------------------------------------------------------- */
+.divgal {
+    display: flex;
+}
+
+.mainContainer {
+    display: flex;
+    grid-area: logo;
+}
+
+.collectionsContainer {
+    display: flex;
+    flex-direction: row;
+    grid-area: colecciones;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.botonesDeAbajo {
+    background-color: rgb(0, 0, 0);
+    grid-area: info;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    margin-top:30px 
+}    
+
+/* ------------------------------------------  TEXTOS   ------------------------------------------------------- */
+.divgal p {
+    font-family:"Montserrat";
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-left: 130px;
+}
+
+.divgal p:hover {
+    font-size: 2rem;
+    -webkit-text-stroke: 1px blue;
+}
+
+
+
+.textCollections {
+    font-family: "Montserrat";
+    color: white;
+    padding-left: 70px;
+    text-align: center; 
+    font-size: 4rem;
+}
+
+.lista a {
+    color:rgb(0, 0, 0);
+}
+
+.botonesDeAbajo a {
+    font-family: "Montserrat";
+    color:rgb(255, 255, 255);
+}
+
+/* ------------------------------------------  LINKS   ------------------------------------------------------- */
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* ------------------------------------------  IMAGENES   ------------------------------------------------------- */
+.divgal img {
+    width: 350px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 0.5px;
+}
+
+.divgal img:hover{
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.mainLogo {
+    height: 415px;
+    width: 415px;
+}
+
+.imgCollections {
+    margin: 5px;
+    padding: 25px;
+    border-radius: 0.5px;
+    width: 350px;
+}
+
+
+.imgCollections:hover {
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+
+.imgRedes {
+    width: 60px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------  ADAPATDO PARA MOBILE ------------------------------------------------------- */
+
+
+@media screen and (min-width: 100px) {
+
+
+
+    #gridIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr 0.1fr 1fr 0.1fr 0.01fr;
+        grid-template-areas:    "header"
+                                "logo"
+                                "colecciones"
+                                "info"
+                                "footer";
+        justify-content: flex-start; 
+    }
+
+    #gridCold {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr 0.1fr 1fr 0.01fr;
+        grid-template-areas:    
+                                "menu"
+                                "titulo"
+                                "imagenes"
+                                "footer2";
+        justify-content: flex-start; 
+    }
+
+    #gridHeraCollection {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr 0.1fr 1fr 0.01fr;
+        grid-template-areas:    
+                                "menu"
+                                "titulo"
+                                "imagenes"
+                                "footer2";
+        justify-content: flex-start; 
+    }
+
+    #gridSummer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr 0.1fr 1fr 0.01fr;
+        grid-template-areas:    
+                                "menu"
+                                "titulo"
+                                "imagenes"
+                                "footer2";
+        justify-content: flex-start; 
+    }
+
+    #gridEnvios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr 0.1fr 1fr 0.01fr;
+        grid-template-areas:    
+                                "menu"
+                                "titulo"
+                                "imagenes"
+                                "footer2";
+        justify-content: flex-start; 
+    }
+
+
+    .divgal img {
+        width: 300px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        border-radius: 0.5px;
+    }
+    
+    .imgRedes {
+        width: 60px;
+    }
+    .imgCollections {
+        margin: 5px;
+        padding: 25px;
+        border-radius: 0.5px;
+        width: 350px;
+    }
+
+    .botonesDeAbajo a {
+        font-family: "Montserrat";
+        color:rgb(255, 255, 255);
+        text-decoration:none;
+    }
+
+    .lista a {
+        font-size: 0.8rem;
+        color:rgb(217, 211, 211);
+        text-decoration:none;
+    }
+
+    .lista li {
+        font-size: 1rem;
+        display: inline;
+        margin: 6px;
+    }
+
+    .divgal p {
+        font-family:"Montserrat";
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+
+
+    .lista {
+        text-align: center
+    }
+
+    .botonesDeAbajo a {
+        font-family: "Montserrat";
+        color:rgb(255, 255, 255);
+    
+    }
+    .textCollections {
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-size: 1.8rem;
+        padding-left: 40px;
+        text-decoration:none;
+        text-align: center;
+    
+    }
+
+    .imgCollections {
+        margin: 1px;
+        padding: 25px;
+        border-radius: 0.5px;
+        width: 350px;
+    }
+
+    .mainLogo {
+        margin: 0;
+        padding-left: 80px;
+        padding-right: 80px;
+        height: 200px;
+        width: 200px;
+        display: block;
+    }
+
+    #footer2 {
+        display: flex;
+        grid-area: footer2;
+    }
+    
+    .lista {
+    background-color: rgb(92, 92, 92);
+    padding: 4px;
+    }
+}
