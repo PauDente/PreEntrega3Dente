@@ -224,14 +224,18 @@ footer {
     -webkit-text-stroke: 1px blue;
 }
 
-
+#titulo p {
+    font-size: 4rem;
+}
 
 .textCollections {
     font-family: "Montserrat";
     color: white;
     text-align: center; 
-    font-size: 4rem;
+    font-size: 10rem;
 }
+
+
 
 .lista a {
     color:rgb(0, 0, 0);
@@ -249,7 +253,7 @@ a:link, a:visited, a:active {
 }
 
 /* ------------------------------------------  IMAGENES   ------------------------------------------------------- */
-.divgal img {
+#imagenes img {
     width: 350px;
     padding-left: 50px;
     padding-right: 30px;
