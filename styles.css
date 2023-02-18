@@ -45,6 +45,9 @@ body {
     grid-area: logo;
 }
 
+.navbar navbar-expand-lg bg-body-tertiary {
+    background-color: black;
+}
 
 
 

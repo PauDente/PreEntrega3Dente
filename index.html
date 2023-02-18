@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Tienda online de HERASTOREAR</title>
-        <link rel="shortcut icon" href="RECURSOS/logo3.jpg">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="https://animate.style/">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Nuevas colecciones, todo de la temporada 2023">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body bgcolor="black">
-        <div id="gridIndex"> 
-            <header>
-                <nav>
-                    <ul class="lista">
-                        <li><a href="PAGES/coldasfuck.html">COLD AS F*CK</a></li>
-                        <li><a href="PAGES/summervibes.html">SUMMER VIBES</a></li>
-                        <li><a href="PAGES/heracollect.html">HERA COLLECT</a></li>
-                        <li><a href="PAGES/envios.html">ENVIOS</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div id="tituloIndex">
-                <div style="display: flex;">
-                    <img class="mainLogo" src="RECURSOS/logo3.jpg" alt="">
-                    <p class="mainTexts"> SINCE 2023 </p>
-                    <p class="mainTexts"> NEW COLLECT</p>
+
+<head>
+    <title>Tienda online de HERASTOREAR</title>
+    <link rel="shortcut icon" href="RECURSOS/logo3.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://animate.style/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuevas colecciones, todo de la temporada 2023">
+    <!----------------------------------bootstrap------------------------------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body bgcolor="black">
+    <div id="gridIndex">
+        <header>
+            <!----------------------------------barra de navegación bootstrap------------------------------------------------------>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">HOME</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    COLLECTIONS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="PAGES/summervibes.html">SUMMERVIBES</a></li>
+                                    <li><a class="dropdown-item" href="PAGES/coldasfuck.html">COLDASFUCK</a></li>
+                                    <li><a class="dropdown-item" href="PAGES/heracollect.html">HERACOLLECT</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    INFORMATION
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="PAGES/envios.html">ENVIOS</a></li>
+                                    <li><a class="dropdown-item" href="PAGES/coldasfuck.html">SOBRE NOSOTROS</a></li>
+                                    <li><a class="dropdown-item" href="PAGES/heracollect.html">POLITICA DE CAMBIOS</a></li>
+                                    <li><a class="dropdown-item" href="PAGES/heracollect.html">TERMINOS Y CONDICIONES</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </header>
+        <div id="tituloIndex">
+            <div style="display: flex;">
+                <img class="mainLogo" src="RECURSOS/logo3.jpg" alt="">
+                <p class="mainTexts"> SINCE 2023 </p>
+                <p class="mainTexts"> NEW COLLECT</p>
             </div>
-            <div class = "collectionsContainer">   
-                <div>
-                    <img class="imgCollections" src="RECURSOS/COLLECTIONS/SUMMERVIBES.jpg" alt="">
-                    <a href="PAGES/summervibes.html" class="textCollections"> SUMMER VIBES </a>
-                </div>
-                <div>
-                    <img class="imgCollections" src="RECURSOS/COLLECTIONS/COLD.jpg" alt="">
-                    <a href="PAGES/coldasfuck.html" class="textCollections">COLD AS F*CK </a>
-                </div>
-                <div>
-                    <img class="imgCollections" src="RECURSOS/COLLECTIONS/HERACOLLECT.jpg" alt="">
-                    <a href="PAGES/heracollect.html" class="textCollections"> HERA COLLECT</a>
-                </div>       
-            </div>     
-            <section class="botonesDeAbajo">
-                <div>
-                    <a href="PAGES/envios.html">ENVIOS</a>
-                </div>
-                <div>
-                    <a href="PAGES/envios.html">SOBRE NOSOTROS</a>
-                </div>
-                <div>
-                    <a href="PAGES/envios.html">POLITICA DE CAMBIOS</a>
-                </div>
-                <div>
-                    <a href="PAGES/envios.html">TERMINOS Y CONDICIONES</a>
-                </div>
-            </section>                
-            <footer>
-                <div> 
-                    <a href="https://www.instagram.com/herastr.bs/"target="_blank" rel="noopener noreferrer"><img class="imgRedes" src="RECURSOS/instagram.png" alt=""></a>
-                    <a href="https://www.facebook.com/Hera-Store-101431082625151?modal=focused_switcher_dialog"target="_blank" rel="noopener noreferrer"><img class="imgRedes" src="RECURSOS/facebook.png" alt=""></a>
-                </div>
-            </footer>
         </div>
-    </body>
+        <div class="collectionsContainer">
+            <div>
+                <img class="imgCollections" src="RECURSOS/COLLECTIONS/SUMMERVIBES.jpg" alt="">
+                <a href="PAGES/summervibes.html" class="textCollections"> SUMMER VIBES </a>
+            </div>
+            <div>
+                <img class="imgCollections" src="RECURSOS/COLLECTIONS/COLD.jpg" alt="">
+                <a href="PAGES/coldasfuck.html" class="textCollections">COLD AS F*CK </a>
+            </div>
+            <div>
+                <img class="imgCollections" src="RECURSOS/COLLECTIONS/HERACOLLECT.jpg" alt="">
+                <a href="PAGES/heracollect.html" class="textCollections"> HERA COLLECT</a>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <a href="https://www.instagram.com/herastr.bs/" target="_blank" rel="noopener noreferrer"><img
+                        class="imgRedes" src="RECURSOS/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/Hera-Store-101431082625151?modal=focused_switcher_dialog"
+                    target="_blank" rel="noopener noreferrer"><img class="imgRedes" src="RECURSOS/facebook.png"
+                        alt=""></a>
+            </div>
+        </footer>
+    </div>
+    <!----------------------------------bootstrap------------------------------------------------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
